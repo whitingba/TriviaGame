@@ -1,0 +1,37 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+    body {
+        background-image: url(../images/zebra.jpg);
+}
+
+
+#question {
+    font-weight: bold;
+}
+
+#score {
+    background-color: black;
+    color: white;
+}
+
+.content {
+    text-align: center;
+    padding-left: 300px;
+    padding-right: 300px;
+}
+
+.triviaGame {
+    background-color: white;
+    text-align: center;
+    margin-left: 100px;
+}
+
+.jumbotron {
+    background-color: black;
+    color: white;
+    font-size: 60px;
+    font-weight: bold;
+}
