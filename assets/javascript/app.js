@@ -36,8 +36,8 @@ function countdown(secs, newElem) {
 
 //function to tally the score
 var tallyScore = function () {
-    $("#correct").text("Correct: " + numCorrect);
-    $("#incorrect").text("Incorrect: " + numIncorrect);
+    $("#divForTimer").text("Correct: " + numCorrect + " and " + "Incorrect: " + numIncorrect);
+    // $("#divForTimer").text("Incorrect: " + numIncorrect);
 }
 
 //function to check the answers of the game
@@ -83,7 +83,7 @@ let checkAnswers = function () {
 
 $(document).ready(function () {
 
-
+    alert("Click 'ok' to play my animal trivia game! You have 60 seconds to select your guesses.");
     countdown(60, "divForTimer");
 
 
