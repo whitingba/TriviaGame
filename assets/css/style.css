@@ -36,3 +36,10 @@
     font-size: 60px;
     font-weight: bold;
 }
+
+.answerStyle {
+    font-size: 20px;
+    color: royalblue;
+    text-align: left;
+    padding: 15px;
+}

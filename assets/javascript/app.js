@@ -1,21 +1,20 @@
-//VARIABLES
-//TODO: create variables
+
 //variable for the timer
 let timer;
-// //variable for the questions
-
-// var quesNumOne = $("#answer1").value;
 
 //variable to hold the correct answers
 var numCorrect = 0;
+
 //variable to hold the incorrect answers
 var numIncorrect = 0;
 
+//variable to hold answers
+var answer1 = "1. How many species of zebras are there?: 3 species of zebras";
+var answer2 = "2. A snail can sleep for how many years?: 3 years";
+var answer3 = "3. Jia Jia, the oldest giant panda, died in 2016 at the age of ___ ?: 114 years old";
+var answer4 = "4. A group of hedgehogs is known as what?: A group of prickle";
+var answer5 = "5. Where is the only place dogs have sweat glands?: Their paws";
 
-
-
-
-//TODO: create functions
 
 
 /*timer function for the game timer.*/
@@ -31,13 +30,18 @@ function countdown(secs, newElem) {
         secs--;
         timer = setTimeout('countdown(' + secs + ',"' + newElem + '")', 1000);
     }
-
 }
 
-//function to tally the score
+//function for the Trivia Answers
+var triviaAnswers = function () {
+    var thisIsAVar = "<div class='answerStyle'>" + answer1 + "<br>" + answer2 + "<br>" + answer3 + "<br>" + answer4 + "<br>" + answer5 + "</div>";
+    return thisIsAVar;
+}
+
+
+//function to tally the score and give the answers
 var tallyScore = function () {
-    $("#divForTimer").text("Correct: " + numCorrect + " and " + "Incorrect: " + numIncorrect);
-    // $("#divForTimer").text("Incorrect: " + numIncorrect);
+    $("#divForTimer").html("Correct: " + numCorrect + "<br>" + "Incorrect: " + numIncorrect + "<br>" + triviaAnswers());
 }
 
 //function to check the answers of the game
@@ -67,7 +71,7 @@ let checkAnswers = function () {
     else {
         numIncorrect++;
     }
-    if (quesNumFour == "Pickles") {
+    if (quesNumFour == "Prickle") {
         numCorrect++;
     }
     else {
@@ -81,21 +85,15 @@ let checkAnswers = function () {
     }
 }
 
+//start game function
 $(document).ready(function () {
 
     alert("Click 'ok' to play my animal trivia game! You have 60 seconds to select your guesses.");
     countdown(60, "divForTimer");
 
-
-    /*timeExpired function - When the timer  runs out the game is over and will tally up score based on answered / unanswered questions
-    maybe have an alert feature that pops up to say you are out of time, you got 5 correct & 5 wrong*/
-
-
-    /*gameEndByButton function (shorten function name) - Otherwise, game ends when they hit the submit button at the end of the game form. Results are tallied with another alert box*/
-
 });
 
-
+//function for what happens when the game is submitted
 $("#submitButton").click(function () {
     document.triviaGame.button.disabled = true;
     checkAnswers();
