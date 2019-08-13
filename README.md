@@ -14,3 +14,5 @@ from 60 seconds. There are 5 trivia questions about animals. Functions contained
 were chosen from the form within the html file. Upon submit, the submit button is disabled, the trivia answers are checked and the
 timer stops. Unanswered questions will count as incorrect. If the timer runs out the answered questions will be checked. Upon
 submit or runout of the timer the total correct or incorrect will display along with the correct answers for the game.
+
+Deployed game: https://whitingba.github.io/TriviaGame/
