@@ -22,13 +22,13 @@ Deployed game: https://whitingba.github.io/TriviaGame/
 ### Screenshots
 
 ##### Screenshot - Alert upon entering game
-![image of alert]()
+![image of alert](https://github.com/whitingba/TriviaGame/blob/master/assets/images/alert.PNG)
 
 ##### Screenshot - Main game screen
-![image of alert]()
+![image of alert](https://github.com/whitingba/TriviaGame/blob/master/assets/images/gameschreenshot.PNG)
 
 ##### Screenshot - Upon submission of answers
-![image of alert]()
+![image of alert](https://github.com/whitingba/TriviaGame/blob/master/assets/images/endOfGame.PNG)
 
 
 ### Technologies Used
