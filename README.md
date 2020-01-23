@@ -1,6 +1,7 @@
 # TriviaGame
 Trivia Game for Week 5 homework
 
+### Background
 **HTML file - index.html**
 HTML file holds the main structure of my game. I have a Bootstrap Jumbotron for the timer and game results at the top.
 Used a Bootstrap card to place the main game questions.
@@ -15,4 +16,26 @@ were chosen from the form within the html file. Upon submit, the submit button i
 timer stops. Unanswered questions will count as incorrect. If the timer runs out the answered questions will be checked. Upon
 submit or runout of the timer the total correct or incorrect will display along with the correct answers for the game.
 
+### Link
 Deployed game: https://whitingba.github.io/TriviaGame/
+
+### Screenshots
+
+##### Screenshot - Alert upon entering game
+![image of alert]()
+
+##### Screenshot - Main game screen
+![image of alert]()
+
+##### Screenshot - Upon submission of answers
+![image of alert]()
+
+
+### Technologies Used
+* HTML
+* CSS
+* Javascript / jQuery - added use of timers this week, such as setTimeOut
+
+### Author
+Barbara Whiting
+
